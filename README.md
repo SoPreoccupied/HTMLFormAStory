@@ -33,8 +33,30 @@ This is a project in HTML using forms to gather user input data.
                 <label for="num-1">Number:</label>
                 <input id="num-1" name="num-1" type="number" required>
                 <br>
+                <span>Yes or No:</span>
+                <br>
+                <input id="yes" name="answer" type="radio" value="yes" required>
+                <label for="yes">Yes</label>
+                <br>
+                <input id="no" name="answer" type="radio" value="no" required>
+                <label for="no">No</label>
+                <br>
+                <label for="speed">Relative speed (ends in -er):</label>
+                <select id="speed" name="speed" required>
+                    <option value="faster">Faster</option>
+                    <option value="slower">Slower</option>
+                </select>
+                <br>
+                <label for="quote">Motivational Quote:</label>
+                <input id="quote" name="quote" type="text" list="quote-choices" required>
+                <datalist id="quote-choices"></datalist>
+                <br>
+                <option value="winner gets ice cream!"></option>
+                <label for="message">Meaningful Message:</label>
+                <textarea id="message" name="message" rows="8" cols="40" required></textarea>
+                <br>
+                <input type="submit" value="Form My Story!">
             </form>
-
         </section>
     </body>
 </html>
